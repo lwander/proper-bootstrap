@@ -3,7 +3,7 @@ CC=gcc
 OBJ_DIR=obj
 T0=t0
 
-T0_SRCS=main.S 
+T0_SRCS=main.S tok.S
 T0_SRCS_E=$(T0_SRCS:%=$(T0)/%)
 
 # Not necessary for t0, but may be later

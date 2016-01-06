@@ -26,19 +26,11 @@ str_eq_ret:
     ret
 
 _start:
-    mov     $less_tok, %rdi
-    mov     $less_tok, %rsi
+    mov     $int_tok, %rdi
+    mov     $int_tok, %rsi
     mov     $main_tok_len, %rdx
     call str_eq
 
     mov     %rax, %rdi
     mov     $60, %rax
     syscall
-
-main_tok:
-    .ascii  "main\n"
-    .set    main_tok_len, .-main_tok    
-
-less_tok:
-    .ascii  "less\n"
-    .set    less_tok_len, .-less_tok    
