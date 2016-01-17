@@ -51,18 +51,18 @@ rbracket_tok:
     .ascii  "]"
     .set    rbracket_tok_len, .-rbracket_tok
 
-asterix_tok
+asterix_tok:
     .ascii  "*"
     .set    asterix_tok_len, .-asterix_tok
 
-equals_tok
+equals_tok:
     .ascii  "="
     .set    equals_tok_len, .-equals_tok
 
-comma_tok
+comma_tok:
     .ascii  ","
     .set    comma_tok_len, .-comma_tok
 
-semicolon_tok
+semicolon_tok:
     .ascii  ";"
     .set    semicolon_tok_len, .-semicolon_tok
