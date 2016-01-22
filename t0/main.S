@@ -26,7 +26,7 @@ str_eq_ret:
     ret
 
 _start:
-    mov     $int_tok, %rdi
+    mov     $main_tok, %rdi
     mov     $int_tok, %rsi
     mov     $main_tok_len, %rdx
     call str_eq

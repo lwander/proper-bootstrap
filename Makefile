@@ -11,8 +11,7 @@ T0_OBJS=$(T0_SRCS:%.S=$(T0)/$(OBJ_DIR)/%.o)
 
 .PHONY: all clean clean-t0
 
-all: 
-	echo "Specify a target <- { t0 }."
+all: $(T0)
 
 $(T0): $(T0_SRCS_E)
 	$(CC) $^ -o $(T0)/$(T0) -nostdlib
